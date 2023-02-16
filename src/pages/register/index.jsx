@@ -1,23 +1,24 @@
 import { Link } from "react-router-dom"
+import { InputField } from "../../components/InputField"
+import { SubmitButton } from "../../components/SubmitButton"
 
 export default function Register() {
     return (
         <main className="page-wrapper">
             <form action="" className="form">
-                <nav className="form__nav">
-                    <Link to='/login' className="form__link">Login</Link>
-                    <Link to='/register' className="form__link form__link--red">Create an account</Link>
-                </nav>
+                <h1 className="form__title">Signup</h1>
                 <div className="form__row">
-                    <input type="text" className="form__input" placeholder="First name"/>
-                    <input type="text" className="form__input" placeholder="Last name"/>
+                    <InputField label="First name" name="firstName" type="text" />
+                    <InputField label="Last name" name="lastName" type="text" />
                 </div>
-                <input type="email" className="form__input" placeholder="Mail adress"/>
-                <input type="email" className="form__input" placeholder="Confirm mail adress"/>
-                <input type="password" className="form__input" placeholder="Password"/>
-                <input type="password" className="form__input" placeholder="Confirm password"/>
-                <button type="submit" className="form__button form__button--red">Create my account</button>
+                <InputField label="Mail adress" name="mail" type="email" />
+                <InputField label="Confirm mail adress" name="mailConfirm" type="email" />
+                <InputField label="Password" name="password" type="password" />
+                <InputField label="Confirm password" name="passwordConfirm" type="password" />
+                <p className="form__conditions">By clicking “Create my account”, you agree to our <br/><Link className="form__link" to="/">Terms and Conditions</Link> and <Link className="form__link" to="/">Privacy Statement</Link></p>
+                <SubmitButton color={"red"}>Create my account</SubmitButton>
             </form>
+            <p className="text--secondary">Already have an account? <Link class="text--secondary__link" to="/login">Login</Link></p>
         </main>
     )
 }
