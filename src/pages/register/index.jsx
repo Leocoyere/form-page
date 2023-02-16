@@ -12,10 +12,10 @@ export default function Register() {
                     <input type="text" className="form-input" placeholder="First name"/>
                     <input type="text" className="form-input" placeholder="Last name"/>
                 </div>
-                <input type="text" className="form-input" placeholder="Mail adress"/>
-                <input type="text" className="form-input" placeholder="Confirm mail adress"/>
-                <input type="text" className="form-input" placeholder="Password"/>
-                <input type="text" className="form-input" placeholder="Confirm password"/>
+                <input type="email" className="form-input" placeholder="Mail adress"/>
+                <input type="email" className="form-input" placeholder="Confirm mail adress"/>
+                <input type="password" className="form-input" placeholder="Password"/>
+                <input type="password" className="form-input" placeholder="Confirm password"/>
                 <button type="submit" className="form-button form-button--red">Create my account</button>
             </form>
         </main>
