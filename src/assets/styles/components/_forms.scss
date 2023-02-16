@@ -1,4 +1,4 @@
-.form-wrapper {
+.page-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,12 +17,12 @@
     border-radius: var(--form-radius);
 }
 
-.form-row {
+.form__row {
     display: flex;
     gap: 4.375em;
 }
 
-.form-input {
+.form__input {
     font-size: 1em;
     padding: .3em 0;
     width: 100%;
@@ -31,12 +31,12 @@
     margin-bottom: 45px;
 }
 
-.form-input::placeholder {
+.form__input::placeholder {
     color: var(--color-dark-grey);
 }
 
 
-.form-button {
+.form__button {
     font-size: 1.091em;
     width: 100%;
     height: 75px;
@@ -52,13 +52,13 @@
     }
 }
 
-.form-nav {
+.form__nav {
     display: flex;
     width: 100%;
     margin-bottom: 130px;
 }
 
-.form-link {
+.form__link {
     width: 50%;
     text-align: center;
     font-size: 1.182em;
@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 700px) {
 
-    .form-wrapper {
+    .form__wrapper {
         background-color: var(--color-white);
     }
 
@@ -84,20 +84,20 @@
         border: none;
     }
 
-    .form-row {
+    .form__row {
         display: block;
     }
 
-    .form-input {
+    .form__input {
         margin-bottom: 25px;
     }
 
-    .form-button {
+    .form__button {
         margin-top: 70px;
         height: 44px;
     }
 
-    .form-nav {
+    .form__nav {
         margin-bottom: 60px;
     }
 }
